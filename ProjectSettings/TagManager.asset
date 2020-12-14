@@ -6,6 +6,15 @@ TagManager:
   tags:
   - slot
   - UI
+  - droplet
+  - BeakerLock
+  - Beaker
+  - TitrationLock1
+  - TitrationLock2
+  - TitrationLock3
+  - ScaleLock
+  - StirStation
+  - Erlynmeyer
   layers:
   - Default
   - TransparentFX

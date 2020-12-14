@@ -10,7 +10,7 @@ public class weight : MonoBehaviour
 
     void Update()
     {
-        if(sumWeight == .15)
+        if(sumWeight < .2 && sumWeight > .12)
         {
             display.color = Color.green;
         } 

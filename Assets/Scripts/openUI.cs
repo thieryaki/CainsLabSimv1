@@ -5,6 +5,10 @@ using UnityEngine;
 public class openUI : MonoBehaviour
 {
     [SerializeField]
+    private GameObject Player;
+
+
+    [SerializeField]
     private GameObject ui;
 
     [SerializeField]
@@ -37,6 +41,7 @@ public class openUI : MonoBehaviour
     {
         if (playerNear && Input.GetKey("e"))
         {
+            Player.SetActive(false);
             ui.SetActive(true);
             player.CanMove = false;
             DragDrop d1 = slot1.ItemDrag;
@@ -49,8 +54,9 @@ public class openUI : MonoBehaviour
             }
         }
 
-        if (playerNear && Input.GetKey("escape"))
+        if (Input.GetKey("escape"))
         {
+            Player.SetActive(true);
             ui.SetActive(false);
             player.CanMove = true;
             DragDrop d1 = slot1.ItemDrag;
